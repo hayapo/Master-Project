@@ -1,0 +1,30 @@
+[project]
+name = "master-project"
+version = "0.1.0"
+description = "Add a short description here"
+authors = [
+    { name = "hayapo", email = "keep.forward1001@gmail.com" }
+]
+dependencies = [
+    "numpy~=1.24.3",
+    "scipy~=1.10.1",
+    "scikit-learn~=1.2.2",
+    "pandas~=2.0.2",
+    "brainflow~=5.8.0",
+    "mne~=1.4.1",
+    "matplotlib~=3.7.1",
+    "pylsl~=1.16.1",
+    "setuptools~=67.8.0",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+
+[tool.hatch.metadata]
+allow-direct-references = true
